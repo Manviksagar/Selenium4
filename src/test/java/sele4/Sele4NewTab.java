@@ -2,13 +2,15 @@ package sele4;
 
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WindowType;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import java.io.File;
+import java.io.IOException;
 
 public class Sele4NewTab {
     WebDriver driver;
@@ -36,6 +38,15 @@ public class Sele4NewTab {
 
         driver.switchTo().newWindow(WindowType.TAB);
         driver.get("https://www.google.com/");
+    }
+
+    @Test
+    public void testLogo() throws IOException {
+
+        driver.get("https://opensource-demo.orangehrmlive.com/");
+        driver.manage().window().maximize();
+        File srcfile=driver.findElement(By.xpath("//div[@id='divLogo']//img")).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(srcfile, new File("logo.png"));
     }
 
 }
