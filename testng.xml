@@ -5,7 +5,7 @@
     <test verbose="2" preserve-order="false"
           name="Test1">
         <classes>
-            <class name="sele4.Sele4NewTab">
+            <class name="prac.WaiTest">
 
             </class>
         </classes>
