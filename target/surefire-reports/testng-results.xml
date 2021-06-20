@@ -1,35 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="All Test Suite" duration-ms="13805" started-at="2021-06-19T18:26:12 IST" finished-at="2021-06-19T18:26:26 IST">
+  <suite name="All Test Suite" duration-ms="18889" started-at="2021-06-19T18:55:43 IST" finished-at="2021-06-19T18:56:02 IST">
     <groups>
       <group name="functional">
-        <method signature="WaiTest.test2()[pri:1, instance:prac.WaiTest@73846619]" name="test2" class="prac.WaiTest"/>
+        <method signature="WaiTest.test2()[pri:1, instance:prac.WaiTest@6e1ec318]" name="test2" class="prac.WaiTest"/>
       </group> <!-- functional -->
       <group name="regression">
-        <method signature="WaiTest.test1()[pri:2, instance:prac.WaiTest@73846619]" name="test1" class="prac.WaiTest"/>
+        <method signature="BankSite.bankLogin()[pri:3, instance:prac.BankSite@10bdf5e5]" name="bankLogin" class="prac.BankSite"/>
+        <method signature="WaiTest.test1()[pri:2, instance:prac.WaiTest@6e1ec318]" name="test1" class="prac.WaiTest"/>
       </group> <!-- regression -->
     </groups>
-    <test name="Test1" duration-ms="13805" started-at="2021-06-19T18:26:12 IST" finished-at="2021-06-19T18:26:26 IST">
+    <test name="Test1" duration-ms="18889" started-at="2021-06-19T18:55:43 IST" finished-at="2021-06-19T18:56:02 IST">
       <class name="prac.WaiTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:prac.WaiTest@73846619]" name="setup" is-config="true" duration-ms="7222" started-at="2021-06-19T18:26:12 IST" finished-at="2021-06-19T18:26:19 IST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:prac.WaiTest@6e1ec318]" name="setup" is-config="true" duration-ms="7923" started-at="2021-06-19T18:55:43 IST" finished-at="2021-06-19T18:55:51 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="test2()[pri:1, instance:prac.WaiTest@73846619]" name="test2" duration-ms="1668" started-at="2021-06-19T18:26:19 IST" finished-at="2021-06-19T18:26:21 IST">
+        <test-method status="PASS" signature="test2()[pri:1, instance:prac.WaiTest@6e1ec318]" name="test2" duration-ms="1651" started-at="2021-06-19T18:55:51 IST" finished-at="2021-06-19T18:55:53 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="test1()[pri:2, instance:prac.WaiTest@73846619]" name="test1" duration-ms="3271" started-at="2021-06-19T18:26:21 IST" finished-at="2021-06-19T18:26:24 IST">
+        <test-method status="PASS" signature="test1()[pri:2, instance:prac.WaiTest@6e1ec318]" name="test1" duration-ms="3103" started-at="2021-06-19T18:55:53 IST" finished-at="2021-06-19T18:55:56 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:prac.WaiTest@73846619]" name="tearDown" is-config="true" duration-ms="1606" started-at="2021-06-19T18:26:24 IST" finished-at="2021-06-19T18:26:26 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:prac.WaiTest@6e1ec318]" name="tearDown" is-config="true" duration-ms="1537" started-at="2021-06-19T18:55:56 IST" finished-at="2021-06-19T18:55:58 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- prac.WaiTest -->
+      <class name="prac.BankSite">
+        <test-method status="PASS" signature="setup()[pri:0, instance:prac.BankSite@10bdf5e5]" name="setup" is-config="true" duration-ms="2572" started-at="2021-06-19T18:55:58 IST" finished-at="2021-06-19T18:56:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="bankLogin()[pri:3, instance:prac.BankSite@10bdf5e5]" name="bankLogin" duration-ms="661" started-at="2021-06-19T18:56:00 IST" finished-at="2021-06-19T18:56:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bankLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:prac.BankSite@10bdf5e5]" name="tearDown" is-config="true" duration-ms="1392" started-at="2021-06-19T18:56:01 IST" finished-at="2021-06-19T18:56:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- prac.BankSite -->
     </test> <!-- Test1 -->
   </suite> <!-- All Test Suite -->
 </testng-results>

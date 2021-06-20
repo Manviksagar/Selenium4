@@ -4,10 +4,19 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="false"
           name="Test1">
-        <classes>
+        <parameter name="browser" value="Sagar"></parameter>
+        <parameter name="para" value="Sagarpara"></parameter>
+
+        <packages>
+            
+            <package name="prac"></package>
+<!--            <package name="sele4"></package>-->
+
+        </packages>
+        <!--<classes>
             <class name="prac.WaiTest">
 
             </class>
-        </classes>
+        </classes>-->
     </test>
 </suite>

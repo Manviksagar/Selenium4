@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="4.94" tests="2" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="5.419" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2020.2.3"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -63,6 +63,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="test2" classname="prac.WaiTest" time="1.669"/>
-  <testcase name="test1" classname="prac.WaiTest" time="3.271"/>
+  <testcase name="test2" classname="prac.WaiTest" time="1.654"/>
+  <testcase name="test1" classname="prac.WaiTest" time="3.104"/>
+  <testcase name="bankLogin" classname="prac.BankSite" time="0.661"/>
 </testsuite>

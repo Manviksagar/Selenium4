@@ -10,23 +10,29 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class WaiTest extends DriverSetup {
+import java.io.IOException;
+
+public class WaiTestSag extends DriverSetup {
 
 
-    @Test(priority = 2 , groups = "regression")
+    public WaiTestSag() throws IOException {
+    }
+
+    @Test(groups = "regression")
     public void test1(){
 
         //driver.findElement(By.id()).sendKeys();
         //driver.switchTo().newWindow(WindowType.WINDOW);
-        this.driver.get("https://www.google.com/");
+        this.driver.get(this.prop.getProperty("google"));
         this.driver.findElement(By.name("q")).sendKeys("sagar", Keys.ENTER);
     }
-    @Test(priority = 1, groups = "functional")
+    @Test(groups = "functional")
     public void test2(){
 
         //driver.findElement(By.id()).sendKeys();
         //driver.switchTo().newWindow(WindowType.WINDOW);
-        this.driver.get("https://www.facebook.com/");
+        this.driver.get(this.prop.getProperty("fburl"));
+        System.out.println(this.prop.getProperty("fburl"));
         //this.driver.findElement(By.name("q")).sendKeys("sagar", Keys.ENTER);
     }
 
